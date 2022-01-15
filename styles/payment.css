@@ -1,11 +1,13 @@
 body{
+    margin:0;
     width:100%;
     height: 100%;
+    background-color:  #e0e0e0;
 }
-main{
-    width: 100%;
-    height:100%;
+header{
+    background-color: rosybrown;
 }
+
 #logo-image{
     width: 60px;
     height: 60px;
@@ -14,7 +16,33 @@ main{
     width: 500px;
     height: 500px;
 }
+
+.list-view-cards{
+    background-color: rgb(132,136,139);
+    width: 50%;
+    margin: 2%;
+    
+}
+.payment-details{
+    margin: 2%;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items:center;
+}
 .social-logo-image{
     width: 22px;
     height: 20px;
 }
+.tariff-detail{
+    padding: 2%;
+    margin:2%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+footer{
+    background-color: rosybrown;
+}
+  
