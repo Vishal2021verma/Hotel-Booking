@@ -1,20 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/detail.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <title>Details</title>
 </head>
 
 <body>
 
+    <!-- header section -->
     <header>
-        <a href="index.html"><img id="logo-image" src="assests/images/logo.png" alt="logo" width="150px"></a>
-        <a href="login.html" target="_blank">Login</a>
+        <div class="logo-image-div">
+            <a href="index.html"><img id="logo-image" src="assests/images/logo.png" alt="logo" width="150px"></a>
+        </div>
+        <div class="login-div">
+            <a class="link" href="login.html">Login</a>
+        </div>
     </header>
+
     <div class="content">
         <div>
             <img class="detail-hotel-image"
@@ -68,18 +75,25 @@
         </div>
 
     </div>
+    <!-- FOOTER SECTION START HERE  -->
     <footer>
-        <a href="contact.html">Contact Us</a>
-        <div class="social icon">
-            <a href="https://www.facebook.com"><img class="social-logo-image" src="assests/images/facebook.png"
-                    alt="facebook" width="22px" height="20px"></a>
-            <a href="https://www.instagram.com"><img class="social-logo-image" src="assests/images/instagram.png"
-                    alt="instagram" width="22px" height="20px"></a>
-            <a href="https://twitter.com"><img class="social-logo-image" src="assests/images/twitter.png" alt=""
-                    width="22px" height="20px"></a>
+        <div class="footer-content-div footer-content">
+            <a class="link" href="contact.html">Contact Us</a>
         </div>
-        <p>&#169; 2020 ROOM SEARCH PVT. LTD.</p>
+        <div class="social-icon footer-content">
+            <a href="https://www.facebook.com"><img class="social-logo-image" src="assests/images/facebook.png"
+                    alt="facebook"></a>
+            <a href="https://www.instagram.com"><img class="social-logo-image" src="assests/images/instagram.png"
+                    alt="instagram"></a>
+            <a href="https://twitter.com"><img class="social-logo-image" src="assests/images/twitter.png"
+                    alt="twitter"></a>
+        </div>
+
+        <!-- copyright text  -->
+
+        <p class="copyright footer-content">&#169; 2020 ROOM SEARCH PVT. LTD.</p>
     </footer>
+    <!-- end of footer section  -->
 </body>
 
 </html>
