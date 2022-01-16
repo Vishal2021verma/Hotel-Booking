@@ -1,15 +1,51 @@
+* {
+    box-sizing: border-box; 
+  }
 body{
     margin:0;
     width:100%;
     height: 100%;
     background-color:  #e0e0e0;
-}
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+} 
+
+
+/* HEADER SECTION START HERE  */
 header{
     background-color: rosybrown;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
 }
 #logo-image{
     width: 60px;
     height: 60px;
+}
+.logo-image-div{
+    display: inline;
+    margin: 0;
+    height: 60px;
+    padding: 0px;
+}
+.link{
+    text-decoration: none;
+    color:black;
+}
+.login-div{
+    text-align: center;
+    margin:0;
+    float: right; 
+    padding:20px;
+}
+/* HEADER ENDS HERE  */
+
+
+/* CONTENT DIV STARTS HERE  */
+.content{
+    margin-top: 70px;
+    margin-bottom: 80px;
 }
 .detail-hotel-image{
     margin: 2% 4% 0 4%;
@@ -17,7 +53,8 @@ header{
     height: 500px;
 }
 .details-room{
-    margin: 2% 4% 2% 4%;
+    margin: 2% 4% 4% 4%;
+    padding-bottom: 2%;
 }
 .book_now{
     margin: 0 4% 0 4%;
@@ -27,8 +64,38 @@ header{
     height: 20px;
 }
  
+/* FOOTER SECTION STRAT HERE  */
 footer{
     background-color: rosybrown;
+    position: fixed;
+    bottom: 0;
+    left: 0;  
+    width: 100%;
 }
- 
- 
+
+.footer-content-div{
+    display: inline;
+    float: left;
+}
+
+.social-logo-image{
+    width: 22px;
+    height: 20px;
+}
+
+.social-icon{
+    display: inline;
+    float: right;
+}
+.copyright{
+    display: inline;
+    position: absolute;
+    left:40%;
+    font-size: 12px;
+}
+.footer-content{
+    padding:20px;
+    overflow: hidden;
+}
+
+/* FOOTER SECTION END HERE  */
