@@ -1,34 +1,115 @@
+* {
+    box-sizing: border-box;
+  }
 body{
     margin:0;
     width:100%;
     height: 100%;
     background-color:  #e0e0e0;
-}
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+} 
+
+/* HEADER SECTION START HERE  */
 header{
     background-color: rosybrown;
-}
-main{
+    position: fixed;
+    top:0;
+    left: 0;
     width: 100%;
-    height:100%;
 }
 #logo-image{
     width: 60px;
     height: 60px;
 }
+.logo-image-div{
+    display: inline;
+    margin: 0;
+    height: 60px;
+    padding: 0px;
+}
+.link{
+    text-decoration: none;
+    color:black;
+}
+.login-div{
+    text-align: center;
+    margin:0;
+    float: right; 
+    padding:20px;
+}
+/* HEADER ENDS HERE  */
+
+
+/* CONTENT DIV STARTS HERE  */
+.content{
+    margin-top: 70px;
+    margin-bottom: 80px;
+}
 .hotel-image{
     width: 250px;
     height: 250px;
 }
+#hotel-list-view{
+    display: flex;
+    flex-wrap: wrap;
+}
 .list-view-cards{
     background-color: rgb(132,136,139);
-    width: 50%;
-    margin: 2%;
+    width: 40%; 
+    margin: 4%;
 }
+#map-view{
+    display: none;
+}
+ul {
+    list-style-type: none;
+    margin:0;
+    padding: 20px;
+    overflow: hidden;
+    text-align: center;  
+}
+
+li {
+    margin: auto;
+    display: inline;
+    padding: 10px;
+}
+
+/* CONTENT DIV END HERE  */
+
+/* FOOTER SECTION STRAT HERE  */
+footer{
+    background-color: rosybrown;
+    position: fixed;
+    bottom: 0;
+    left: 0;  
+    width: 100%;
+}
+
+.footer-content-div{
+    display: inline;
+    float: left;
+}
+
 .social-logo-image{
     width: 22px;
     height: 20px;
 }
 
-footer{
-    background-color: rosybrown;
+.social-icon{
+    display: inline;
+    float: right;
 }
+.copyright{
+    display: inline;
+    position: absolute;
+    left:40%;
+    font-size: 12px;
+}
+.footer-content{
+    padding:20px;
+    overflow: hidden;
+}
+
+/* FOOTER SECTION END HERE  */
