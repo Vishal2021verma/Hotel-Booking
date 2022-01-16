@@ -1,11 +1,22 @@
+* {
+    box-sizing: border-box;
+  }
 body{
     margin:0;
     width:100%;
     height: 100%;
     background-color:  #e0e0e0;
-}
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+} 
+
+/* HEADER SECTION START HERE  */
 header{
     background-color: rosybrown;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
 }
 .search-bar{
     width: 100%;
@@ -15,10 +26,48 @@ header{
     background-position: bottom;
     background-attachment: fixed;
     background-size: cover;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar input{
+    background-color:  #f1f1f1;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    width: 100%;
+    padding:10px;
+    font-size: 16px;
 }
 #logo-image{
     width: 60px;
     height: 60px;
+}
+.logo-image-div{
+    display: inline;
+    margin: 0;
+    height: 60px;
+    padding: 0px;
+}
+.link{
+    text-decoration: none;
+    color:black;
+    text-align: center;  
+}
+.login-div{
+    text-align: center;
+    margin:0;
+    float: right; 
+    padding:20px;
+ 
+}
+/* HEADER ENDS HERE  */
+
+/* CONTENT DIV STARTS HERE  */
+.content{
+    margin-top: 60px;
+    margin-bottom: 80px;
 }
 .container-image{
    
@@ -32,11 +81,48 @@ header{
     width: 150px;
     height:150px;
 }
+
+.view-more-div{
+    text-align: center;
+}
+.view-more-div a{
+    text-decoration: none;
+}
+/* CONTENT DIV  END HERE*/
+
+
+/* FOOTER SECTION STRAT HERE  */
+footer{
+    background-color: rosybrown;
+    position: fixed;
+    bottom: 0;
+    left: 0;  
+    width: 100%;
+}
+
+.footer-content-div{
+    display: inline;
+    float: left;
+}
+
 .social-logo-image{
     width: 22px;
     height: 20px;
 }
-footer{
-    background-color: rosybrown;
+
+.social-icon{
+    display: inline;
+    float: right;
 }
-  
+.copyright{
+    display: inline;
+    position: absolute;
+    left:40%;
+    font-size: 12px;
+}
+.footer-content{
+    padding:20px;
+    overflow: hidden;
+}
+
+/* FOOTER SECTION END HERE  */
