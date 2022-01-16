@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/index.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <title>Index</title>
 </head>
 
@@ -13,8 +14,13 @@
 
     <!-- header section -->
     <header>
-        <img id="logo-image" src="assests/images/logo.png" alt="logo" width="150px">
-        <a href="login.html">Login</a>
+        <div class="logo-image-div">
+            <img id="logo-image" src="assests/images/logo.png" alt="logo" width="150px">
+        </div>
+        <div class="login-div">
+            <a class="link" href="login.html">Login</a>
+        </div>
+
     </header>
 
     <!-- content section  -->
@@ -41,15 +47,19 @@
         </div>
 
         <!-- view more option  -->
+        <div class="view-more-div">
         <a href="index.html">View more>> </a>
-        <br>
+        </div>
+        
     </div>
     <!-- end of content section  -->
 
     <!-- footer section  -->
     <footer>
-        <a href="contact.html">Contact Us</a>
-        <div class="social-icon">
+        <div class="footer-content-div footer-content">
+            <a class="link" href="contact.html">Contact Us</a>
+        </div>
+        <div class="social-icon footer-content">
             <a href="https://www.facebook.com"><img class="social-logo-image" src="assests/images/facebook.png"
                     alt="facebook"></a>
             <a href="https://www.instagram.com"><img class="social-logo-image" src="assests/images/instagram.png"
@@ -59,7 +69,7 @@
         </div>
 
         <!-- copyright text  -->
-        <p>&#169; 2020 ROOM SEARCH PVT. LTD.</p>
+            <p class="copyright footer-content">&#169; 2020 ROOM SEARCH PVT. LTD.</p>
     </footer>
     <!-- end of footer section  -->
 
