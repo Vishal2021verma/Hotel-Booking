@@ -6,56 +6,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/list.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"> 
     <title>List</title>
 </head>
 
 <body>
 
     <header>
-        <a href="index.html"><img id="logo-image" src="assests/images/logo.png" alt="logo" width="150px"></a>
-        <a href="login.html" target="_blank">Login</a>
+        <div class="logo-image-div">
+            <a href="index.html"><img id="logo-image" src="assests/images/logo.png" alt="logo" width="150px"></a>
+        </div>
+        <div class="login-div">
+            <a class="link" href="login.html">Login</a>
+        </div>
     </header>
     <div class="content">
-        <ul type="bullet">
-            <li><a href="#hotel-list-view">List View</a></li>
-            <li><a href="#map-view">Map View</a></li>
+        <ul>
+            <li><a class="link" href="#hotel-list-view">List View</a></li>
+            <li><a class="link" href="#map-view">Map View</a></li>
         </ul>
+
         <div id="hotel-list-view">
-            <a href="detail.html" target="_blank">
-                <div  class="list-view-cards">
-                    <img class="hotel-image"
-                        src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
-                        alt="Radission">
-                    <h4>Radission Blue</h4>
-                    <p>5 Star</p>
-                    <p>New-Delhi</p>
-                </div>
-            </a>
+            <div class="list-view-cards">
+                <a class="link" href="detail.html" target="_blank">
+                    <div> 
+                        <img class="hotel-image"
+                            src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
+                            alt="Radission">
+                        <h4>Radission Blue</h4>
+                        <p>5 Star</p>
+                        <p>New-Delhi</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="list-view-cards">
+                <a class="link" href="detail.html" target="_blank">
+                    <div>
+                        <img class="hotel-image"
+                            src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" alt="lalit">
+                        <h4>The Lalit New Delhi</h4>
+                        <p>4.5 Star</p>
+                        <p>New-Delhi</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="list-view-cards">
+                <a class="link" href="detail.html" target="_blank">
+                    <div>
+                        <img class="hotel-image"
+                            src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg"
+                            alt="taj Palace">
+                        <h4>Taj Palace</h4>
+                        <p>4 Star</p>
+                        <p>New-Delhi</p>
+                    </div>
+                </a>
+            </div>
         </div>
 
-        <div class="list-view-cards">
-            <a href="detail.html" target="_blank">
-                <div>
-                    <img class="hotel-image"
-                        src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" alt="lalit">
-                    <h4>The Lalit New Delhi</h4>
-                    <p>4.5 Star</p>
-                    <p>New-Delhi</p>
-                </div>
-            </a>
-        </div>
 
-        <div class="list-view-cards">
-            <a href="detail.html" target="_blank">
-                <div>
-                    <img class="hotel-image"
-                        src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" alt="taj Palace">
-                    <h4>Taj Palace</h4>
-                    <p>4 Star</p>
-                    <p>New-Delhi</p>
-                </div>
-            </a>
-        </div>
+
         <div id="map-view">
             <a href="detail.html" target="_blank"><img
                     src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt="taj Palace"></a>
@@ -63,18 +75,26 @@
 
         </div>
     </div>
+
+    <!-- FOOTER SECTION START HERE  -->
     <footer>
-        <a href="contact.html">Contact Us</a>
-        <div class="social icon">
-            <a href="https://www.facebook.com"><img class="social-logo-image" src="assests/images/facebook.png"
-                    alt="facebook" width="22px" height="20px"></a>
-            <a href="https://www.instagram.com"><img class="social-logo-image" src="assests/images/instagram.png"
-                    alt="instagram" width="22px" height="20px"></a>
-            <a href="https://twitter.com"><img class="social-logo-image" src="assests/images/twitter.png" alt=""
-                    width="22px" height="20px"></a>
+        <div class="footer-content-div footer-content">
+            <a class="link" href="contact.html">Contact Us</a>
         </div>
-        <p>&#169; 2020 ROOM SEARCH PVT. LTD.</p>
+        <div class="social-icon footer-content">
+            <a href="https://www.facebook.com"><img class="social-logo-image" src="assests/images/facebook.png"
+                    alt="facebook"></a>
+            <a href="https://www.instagram.com"><img class="social-logo-image" src="assests/images/instagram.png"
+                    alt="instagram"></a>
+            <a href="https://twitter.com"><img class="social-logo-image" src="assests/images/twitter.png"
+                    alt="twitter"></a>
+        </div>
+
+        <!-- copyright text  -->
+
+        <p class="copyright footer-content">&#169; 2020 ROOM SEARCH PVT. LTD.</p>
     </footer>
+    <!-- end of footer section  -->
 </body>
 
 </html>
