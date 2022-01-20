@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/payment.css" type="text/css"> 
+    <link rel="stylesheet" href="styles/payment.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <title>Payment</title>
 </head>
 
 <body>
 
-   
+
     <!-- header section -->
     <header>
         <div class="logo-image-div">
@@ -21,44 +21,46 @@
         <div class="login-div">
             <a class="link" href="login.html">Login</a>
         </div>
-    </header> 
+    </header>
     <div class="content">
 
-        <div class="card">
-
-            <div class="list-view-cards">
-                <img class="detail-hotel-image"
-                    src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
-                    alt="Radission">
-
-                <h3>Radission Blu Hotel</h3>
-                <p>#38 of 1,289 hotels in New Delhi</p>
-                <p>National Highway 8, New Delhi 110017 India</p>
+        <div class="card-container">
+            <div class="card" >
+                <div class="list-view-cards-img">
+                    <img class="detail-hotel-image"
+                        src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
+                        alt="Radission">
+                </div>
+                <div class="list-view-cards-details">
+                    <h3>Radission Blu Hotel</h3>
+                    <p>#38 of 1,289 hotels in New Delhi</p>
+                    <p>National Highway 8, New Delhi 110017 India</p>
+                </div>
             </div>
-            
         </div>
 
-        <div class="payment-details">
-            <table style="text-align: left;">
-                <tr>
-                    <th>Name: </th>
-                    <td>John Doe</td>
-                </tr>
-                <tr>
-                    <th>Number of Adults: </th>
-                    <td>2</td>
-                </tr>
-                <tr>
-                    <th>Check-in Date: </th>
-                    <td>06/06/2020</td>
-                </tr>
-                <tr>
-                    <th>Check-out Date: </th>
-                    <td>08/06/2020</td>
-                </tr>
-            </table>
-        </div>
+        
         <div class="tariff-detail">
+            <div class="payment-details">
+                <table style="text-align: left;">
+                    <tr>
+                        <th>Name: </th>
+                        <td>John Doe</td>
+                    </tr>
+                    <tr>
+                        <th>Number of Adults: </th>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <th>Check-in Date: </th>
+                        <td>06/06/2020</td>
+                    </tr>
+                    <tr>
+                        <th>Check-out Date: </th>
+                        <td>08/06/2020</td>
+                    </tr>
+                </table>
+            </div>
             <table style="text-align: left;">
                 <tr>
                     <th>Tariff Breakdown: </th>
@@ -69,28 +71,32 @@
                     <td>Rs. 10000</td>
                 </tr>
             </table>
+            <a class="link" href="payment.html">Pay Now</a>
         </div>
-        <a   class="link" href="payment.html">Pay Now</a>
+       
     </div>
-   <!-- FOOTER SECTION START HERE  -->
-   <footer>
-    <div class="footer-content-div footer-content">
-        <a class="link" href="contact.html">Contact Us</a>
-    </div>
-    <div class="social-icon footer-content">
-        <a href="https://www.facebook.com"><img class="social-logo-image" src="assests/images/facebook.png"
-                alt="facebook"></a>
-        <a href="https://www.instagram.com"><img class="social-logo-image" src="assests/images/instagram.png"
-                alt="instagram"></a>
-        <a href="https://twitter.com"><img class="social-logo-image" src="assests/images/twitter.png"
-                alt="twitter"></a>
-    </div>
+     <!-- footer section  -->
+     <footer>
+        <div class="nav-div">
+            <div class="footer-content-div footer-content">
+                <a class="link" href="contact.html">Contact Us</a>
+            </div>
 
-    <!-- copyright text  -->
+            <!-- copyright text  -->
+            <p class="copyright footer-content">&#169; 2020 ROOM SEARCH PVT. LTD.</p>
 
-    <p class="copyright footer-content">&#169; 2020 ROOM SEARCH PVT. LTD.</p>
-</footer>
-<!-- end of footer section  -->
+            <div class="social-icon footer-content">
+                <a href="https://www.facebook.com"><img class="social-logo-image" src="assests/images/facebook.png"
+                        alt="facebook"></a>
+                <a href="https://www.instagram.com"><img class="social-logo-image" src="assests/images/instagram.png"
+                        alt="instagram"></a>
+                <a href="https://twitter.com"><img class="social-logo-image" src="assests/images/twitter.png"
+                        alt="twitter"></a>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer section  -->
+
 </body>
 
 </html>
