@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box; 
+    box-sizing: border-box;
   }
 body{
     margin:0;
@@ -9,6 +9,7 @@ body{
     font-size: 16px;
     font-family: 'Ubuntu', sans-serif;
 } 
+
 /* HEADER SECTION START HERE  */
 header{
     background-color: rosybrown;
@@ -17,67 +18,90 @@ header{
     left: 0;
     width: 100%;
 }
+.nav-div{
+    display: flex;
+    justify-content: space-between;   
+}
+    
 #logo-image{
     width: 60px;
     height: 60px;
 }
 .logo-image-div{
     display: inline;
-    margin: 0;
+    margin: 0 0 0 20px;
     height: 60px;
     padding: 0px;
 }
+
 .link{
     text-decoration: none;
     color:black;
+    
+    font-weight: bold;
 }
+
 .login-div{
     text-align: center;
-    margin:0;
+    margin:0 20px 0 0;
     float: right; 
     padding:20px;
+ 
 }
 /* HEADER ENDS HERE  */
-
-
 /* CONTENT DIV STARTS HERE  */
 .content{
     margin-top: 70px;
     margin-bottom: 80px;
 }
-.detail-hotel-image{
-    width: 500px;
-    height: 500px;
-}
-
-.list-view-cards{
-    background-color: rgb(132,136,139);
-    width: 50%;
-    margin: 2%;
-    
-}
-.payment-details{
-    margin: 2%;
+.card-container{
+    padding-top: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .card{
+  width:60%;
+   height: 200px;
   display: flex;
-  flex-direction: column;
-  justify-items: center;
-  align-items:center;
+  flex-direction: row;
+}
+.list-view-cards-img{
+    width:30%;
+    height:100%;
+}
+.list-view-cards-details{
+    padding:2%;
+    background-color: lightgray;
+    width: 70%;
+    height: 100%;
+}
+.detail-hotel-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.payment-details{
+    margin: 2%;
 }
 .social-logo-image{
     width: 22px;
     height: 20px;
 }
 .tariff-detail{
+    background-color: rosybrown;
     padding: 2%;
     margin:2%;
     border: 1px solid black;
     border-radius: 5px;
+    display: flex;
+    justify-content:space-evenly;
+
 }
 
 /* CONTENT DIV ENDS HERE  */
-
 
 /* FOOTER SECTION STRAT HERE  */
 footer{
@@ -90,7 +114,7 @@ footer{
 
 .footer-content-div{
     display: inline;
-    float: left;
+  
 }
 
 .social-logo-image{
@@ -100,17 +124,15 @@ footer{
 
 .social-icon{
     display: inline;
-    float: right;
+  
 }
 .copyright{
     display: inline;
-    position: absolute;
-    left:40%;
     font-size: 12px;
 }
 .footer-content{
-    padding:20px;
     overflow: hidden;
+    margin: 12px 20px 12px 20px;
 }
 
 /* FOOTER SECTION END HERE  */
