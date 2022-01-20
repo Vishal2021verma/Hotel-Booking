@@ -18,6 +18,43 @@ header{
     left: 0;
     width: 100%;
 }
+.nav-div{
+    display: flex;
+    justify-content: space-between;   
+}
+    
+#logo-image{
+    width: 60px;
+    height: 60px;
+}
+.logo-image-div{
+    display: inline;
+    margin: 0 0 0 20px;
+    height: 60px;
+    padding: 0px;
+}
+
+.link{
+    text-decoration: none;
+    color:black;
+    text-align: center;  
+    font-weight: bold;
+}
+
+.login-div{
+    text-align: center;
+    margin:0 20px 0 0;
+    float: right; 
+    padding:20px;
+ 
+}
+/* HEADER ENDS HERE  */
+
+/* CONTENT DIV STARTS HERE  */
+.content{
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
 .search-bar{
     width: 100%;
     height: 380px;
@@ -34,59 +71,69 @@ header{
 
 .search-bar input{
     background-color:  #f1f1f1;
-    border: 1px solid transparent;
-    border-radius: 10px;
-    width: 100%;
+    border: 1px solid #f1f1f1;
+    border-radius: 5px;
+    width: 400px;
     padding:10px;
     font-size: 16px;
 }
-#logo-image{
-    width: 60px;
-    height: 60px;
-}
-.logo-image-div{
-    display: inline;
-    margin: 0;
-    height: 60px;
-    padding: 0px;
-}
-.link{
-    text-decoration: none;
-    color:black;
-    text-align: center;  
-}
-.login-div{
-    text-align: center;
-    margin:0;
-    float: right; 
-    padding:20px;
- 
-}
-/* HEADER ENDS HERE  */
 
-/* CONTENT DIV STARTS HERE  */
-.content{
-    margin-top: 60px;
-    margin-bottom: 80px;
+input:focus {
+    outline: 1px solid #f1f1f1;
+
 }
 .container-image{
    
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
+    padding: 50px 0 50px 0;
 }
 .city-image{
-    padding: 30px;
+    
     border-radius: 25%;
-    width: 150px;
-    height:150px;
+    width: 100%;
+    height: 100%;
 }
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 25%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black; 
+}
+.container {
+    box-shadow:  10px 10px 10px grey;
+    border-radius: 25%;
+    position: relative;
+    width:150px;
+    height:150px;
+    background-size: cover;
+  }
+ 
+.container :hover .overlay {
+    opacity: .5;
+}
+
 
 .view-more-div{
     text-align: center;
-}
-.view-more-div a{
-    text-decoration: none;
 }
 /* CONTENT DIV  END HERE*/
 
@@ -102,7 +149,7 @@ footer{
 
 .footer-content-div{
     display: inline;
-    float: left;
+  
 }
 
 .social-logo-image{
@@ -112,17 +159,15 @@ footer{
 
 .social-icon{
     display: inline;
-    float: right;
+  
 }
 .copyright{
     display: inline;
-    position: absolute;
-    left:40%;
     font-size: 12px;
 }
 .footer-content{
-    padding:20px;
     overflow: hidden;
+    margin: 12px 20px 12px 20px;
 }
 
 /* FOOTER SECTION END HERE  */
