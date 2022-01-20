@@ -18,25 +18,35 @@ header{
     left: 0;
     width: 100%;
 }
+.nav-div{
+    display: flex;
+    justify-content: space-between;   
+}
+    
 #logo-image{
     width: 60px;
     height: 60px;
 }
 .logo-image-div{
     display: inline;
-    margin: 0;
+    margin: 0 0 0 20px;
     height: 60px;
     padding: 0px;
 }
+
 .link{
     text-decoration: none;
     color:black;
+    
+    font-weight: bold;
 }
+
 .login-div{
     text-align: center;
-    margin:0;
+    margin:0 20px 0 0;
     float: right; 
     padding:20px;
+ 
 }
 /* HEADER ENDS HERE  */
 
@@ -47,17 +57,33 @@ header{
     margin-bottom: 80px;
 }
 .hotel-image{
-    width: 250px;
-    height: 250px;
+    width:100%;
+    height:100%;
+    object-fit: cover;
 }
 #hotel-list-view{
     display: flex;
     flex-wrap: wrap;
 }
 .list-view-cards{
-    background-color: rgb(132,136,139);
+    background-color: lightgray;
+    height: 200px;
     width: 40%; 
     margin: 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.list-view-cards-img{
+    width:40%;
+    height: 100%;
+
+}
+.list-view-cards-details{
+    padding: 2%;
+    width:60%;
+    height:100%;
 }
 #map-view{
     display: none;
@@ -89,7 +115,7 @@ footer{
 
 .footer-content-div{
     display: inline;
-    float: left;
+  
 }
 
 .social-logo-image{
@@ -99,17 +125,15 @@ footer{
 
 .social-icon{
     display: inline;
-    float: right;
+  
 }
 .copyright{
     display: inline;
-    position: absolute;
-    left:40%;
     font-size: 12px;
 }
 .footer-content{
-    padding:20px;
     overflow: hidden;
+    margin: 12px 20px 12px 20px;
 }
 
 /* FOOTER SECTION END HERE  */
