@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/list.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <title>List</title>
 </head>
 
@@ -20,6 +20,7 @@
             <a class="link" href="login.html">Login</a>
         </div>
     </header>
+
     <div class="content">
         <ul>
             <li><a class="link" href="#hotel-list-view">List View</a></li>
@@ -28,41 +29,54 @@
 
         <div id="hotel-list-view">
             <div class="list-view-cards">
-                <a class="link" href="detail.html" target="_blank">
-                    <div> 
+                <div  class="list-view-cards-img">
+                    <a class="link" href="detail.html" target="_blank">
+
                         <img class="hotel-image"
                             src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
                             alt="Radission">
+                    </a>
+
+                </div>
+                <div  class="list-view-cards-details">  
+                    <a class="link" href="detail.html" target="_blank">
                         <h4>Radission Blue</h4>
                         <p>5 Star</p>
                         <p>New-Delhi</p>
-                    </div>
-                </a>
+                    </a>
+                </div>
             </div>
 
             <div class="list-view-cards">
-                <a class="link" href="detail.html" target="_blank">
-                    <div>
+                <div class="list-view-cards-img">
+                    <a class="link" href="detail.html" target="_blank">
                         <img class="hotel-image"
                             src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" alt="lalit">
+                    </a>
+                </div>
+                <div class="list-view-cards-details">  
+                    <a class="link" href="detail.html" target="_blank">
                         <h4>The Lalit New Delhi</h4>
                         <p>4.5 Star</p>
                         <p>New-Delhi</p>
-                    </div>
-                </a>
+                    </a>
+                </div>
             </div>
 
-            <div class="list-view-cards">
-                <a class="link" href="detail.html" target="_blank">
-                    <div>
+            <div class="list-view-cards"> 
+                <div class="list-view-cards-img">
+                    <a class="link" href="detail.html" target="_blank">
                         <img class="hotel-image"
                             src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg"
                             alt="taj Palace">
-                        <h4>Taj Palace</h4>
-                        <p>4 Star</p>
-                        <p>New-Delhi</p>
-                    </div>
-                </a>
+                    </a>
+                </div>
+                <div class="list-view-cards-details">  
+                    <h4>Taj Palace</h4>
+                    <p>4 Star</p>
+                    <p>New-Delhi</p>
+                    </a>
+                </div>
             </div>
         </div>
 
@@ -76,25 +90,28 @@
         </div>
     </div>
 
-    <!-- FOOTER SECTION START HERE  -->
-    <footer>
-        <div class="footer-content-div footer-content">
-            <a class="link" href="contact.html">Contact Us</a>
-        </div>
-        <div class="social-icon footer-content">
-            <a href="https://www.facebook.com"><img class="social-logo-image" src="assests/images/facebook.png"
-                    alt="facebook"></a>
-            <a href="https://www.instagram.com"><img class="social-logo-image" src="assests/images/instagram.png"
-                    alt="instagram"></a>
-            <a href="https://twitter.com"><img class="social-logo-image" src="assests/images/twitter.png"
-                    alt="twitter"></a>
-        </div>
+      <!-- footer section  -->
+      <footer>
+        <div class="nav-div">
+            <div class="footer-content-div footer-content">
+                <a class="link" href="contact.html">Contact Us</a>
+            </div>
 
-        <!-- copyright text  -->
+            <!-- copyright text  -->
+            <p class="copyright footer-content">&#169; 2020 ROOM SEARCH PVT. LTD.</p>
 
-        <p class="copyright footer-content">&#169; 2020 ROOM SEARCH PVT. LTD.</p>
+            <div class="social-icon footer-content">
+                <a href="https://www.facebook.com"><img class="social-logo-image" src="assests/images/facebook.png"
+                        alt="facebook"></a>
+                <a href="https://www.instagram.com"><img class="social-logo-image" src="assests/images/instagram.png"
+                        alt="instagram"></a>
+                <a href="https://twitter.com"><img class="social-logo-image" src="assests/images/twitter.png"
+                        alt="twitter"></a>
+            </div>
+        </div>
     </footer>
     <!-- end of footer section  -->
+
 </body>
 
 </html>
