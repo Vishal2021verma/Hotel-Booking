@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -23,77 +23,115 @@
     </header>
 
     <div class="content">
-        <div>
-            <img class="detail-hotel-image"
-                src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radission">
-            <br>
-            <div class="book_now">
+        <div class="enter-details-card">
+            <div class="enter-details-card-img">
+                <img class="detail-hotel-image"
+                    src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
+                    alt="Radission">
+            </div>
+            <div class="enter-details-card-book_now">
                 <form action="payment.html" method="get">
-                    <label for="adults">Adults: </label>
-                    <input type="number" id="adults" name="adults" min="1" required>
-                    <br>
-                    <label for="name">Name: </label>
-                    <input type="text" id="name" name="name" required>
-                    <br>
-                    <label for="from_date">From Date:</label>
-                    <input type="date" id="from_date" name="from_date" required>
-                    <br>
-                    <label for="to_date">To Date: </label>
-                    <input type="date" id="to_date" name="to_date" required>
-                    <br>
-                    <label for="total">Total: </label>
-                    <input type="text" id="total" name="total" disabled>
-                    <br>
-                    <button type="submit">Book Now</button>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="adults">Adults: </label>
+                        </div>
+                        <div class="col-75">
+                            <input type="number" id="adults" name="adults" min="1" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="name">Name: </label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="from_date">From Date:</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="date" id="from_date" name="from_date" required>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="to_date">To Date: </label>
+                        </div>
+                        <div class="col-75">
+                            <input type="date" id="to_date" name="to_date" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="total">Total: </label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="total" name="total" disabled>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="submit" value="Submit">
+                    </div>
                 </form>
             </div>
-            <div class="details-room">
-                <h4>Radission Blu Hotel</h4>
-                <h5>Rating</h5>
-                <p>5 Star</p>
-                <h5>AMENITIES</h5>
-                <ul>
-                    <li>Room Service</li>
-                    <li>Resturant</li>
-                    <li>Business Center</li>
-                    <li>Fitness Center</li>
-                    <li>Pool</li>
-                </ul>
-                <h5>DESCRIPTION</h5>
-                <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Itaque, qui veniam laboriosam debitis reiciendis sed eum illo,
-                    tenetur quisquam dolorum non! Nam impedit minus soluta enim saepe
-                    laudantium a in recusandae error delectus mollitia quam vero veritatis,
-                    sint ducimus, asperiores est ratione quidem doloribus! Natus perferendis
-                    laudantium reprehenderit sequi, officia ipsam eligendi iusto iure! Magnam
-                    culpa officia id quia cumque ad qui fuga laborum quidem? Nobis doloribus
-                    sapiente eum libero quaerat fugit dolorum consequatur, omnis minus placeat
-                    delectus minima cumque dicta, sit ipsum obcaecati nostrum soluta culpa sint voluptates eaque at.
-                    Consectetur distinctio quisquam reprehenderit impedit. Ipsa dignissimos pariatur dolore.</P>
+        </div>
+        <div class="details-room">
+            <h4>Radission Blu Hotel</h4>
+            <h5>Rating</h5>
+            <p>5 Star</p>
+            <h5>AMENITIES</h5>
+            <ul>
+                <li>Room Service</li>
+                <li>Resturant</li>
+                <li>Business Center</li>
+                <li>Fitness Center</li>
+                <li>Pool</li>
+            </ul>
+            <h5>DESCRIPTION</h5>
+            <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Itaque, qui veniam laboriosam debitis reiciendis sed eum illo,
+                tenetur quisquam dolorum non! Nam impedit minus soluta enim saepe
+                laudantium a in recusandae error delectus mollitia quam vero veritatis,
+                sint ducimus, asperiores est ratione quidem doloribus! Natus perferendis
+                laudantium reprehenderit sequi, officia ipsam eligendi iusto iure! Magnam
+                culpa officia id quia cumque ad qui fuga laborum quidem? Nobis doloribus
+                sapiente eum libero quaerat fugit dolorum consequatur, omnis minus placeat
+                delectus minima cumque dicta, sit ipsum obcaecati nostrum soluta culpa sint voluptates eaque at.
+                Consectetur distinctio quisquam reprehenderit impedit. Ipsa dignissimos pariatur dolore.</P>
 
-            </div>
         </div>
 
     </div>
-    <!-- FOOTER SECTION START HERE  -->
-    <footer>
-        <div class="footer-content-div footer-content">
-            <a class="link" href="contact.html">Contact Us</a>
-        </div>
-        <div class="social-icon footer-content">
-            <a href="https://www.facebook.com"><img class="social-logo-image" src="assests/images/facebook.png"
-                    alt="facebook"></a>
-            <a href="https://www.instagram.com"><img class="social-logo-image" src="assests/images/instagram.png"
-                    alt="instagram"></a>
-            <a href="https://twitter.com"><img class="social-logo-image" src="assests/images/twitter.png"
-                    alt="twitter"></a>
-        </div>
+     <!-- footer section  -->
+     <footer>
+        <div class="nav-div">
+            <div class="footer-content-div footer-content">
+                <a class="link" href="contact.html">Contact Us</a>
+            </div>
 
-        <!-- copyright text  -->
+            <!-- copyright text  -->
+            <p class="copyright footer-content">&#169; 2020 ROOM SEARCH PVT. LTD.</p>
 
-        <p class="copyright footer-content">&#169; 2020 ROOM SEARCH PVT. LTD.</p>
+            <div class="social-icon footer-content">
+                <a href="https://www.facebook.com"><img class="social-logo-image" src="assests/images/facebook.png"
+                        alt="facebook"></a>
+                <a href="https://www.instagram.com"><img class="social-logo-image" src="assests/images/instagram.png"
+                        alt="instagram"></a>
+                <a href="https://twitter.com"><img class="social-logo-image" src="assests/images/twitter.png"
+                        alt="twitter"></a>
+            </div>
+        </div>
     </footer>
     <!-- end of footer section  -->
+
 </body>
 
 </html>
