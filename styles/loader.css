@@ -23,6 +23,7 @@ body{
     100% { transform: rotate(360deg); }
   }
   .container{
+      background-color: transparent;
       display: flex;
       flex-direction: column;
       justify-content: center;
