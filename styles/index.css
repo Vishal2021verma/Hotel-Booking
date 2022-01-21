@@ -45,10 +45,27 @@ header{
     text-align: center;
     margin:0 20px 0 0;
     float: right; 
-    padding:20px;
+    padding:14px;
  
 }
 /* HEADER ENDS HERE  */
+
+
+.centerInput{
+    text-align: center;
+}
+label{
+    padding-right: 10%;
+}
+
+input[type=text], input[type=date],input[type=number],input[type=password],input[type=email], select, textarea {
+    width: 50%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
 
 /* CONTENT DIV STARTS HERE  */
 .content{
@@ -118,7 +135,7 @@ input:focus {
     transition: .5s ease;
     background-color: black; 
 }
-.container {
+.containerr {
     box-shadow:  10px 10px 10px grey;
     border-radius: 25%;
     position: relative;
@@ -127,7 +144,7 @@ input:focus {
     background-size: cover;
   }
  
-.container :hover .overlay {
+.containerr :hover .overlay {
     opacity: .5;
 }
 
