@@ -45,11 +45,24 @@ header{
     text-align: center;
     margin:0 20px 0 0;
     float: right; 
-    padding:20px;
+    padding:14px;
  
 }
 /* HEADER ENDS HERE  */
+.centerInput{
+    text-align: center;
+}
+label{
+    padding-right: 10%;
+}
 
+input[type=text], input[type=date],input[type=number],input[type=password],input[type=email], select, textarea {
+    width: 50%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
 
 /* CONTENT DIV STARTS HERE  */
 .content{
@@ -100,6 +113,9 @@ li {
     margin: auto;
     display: inline;
     padding: 10px;
+}
+.list-view-cards:hover{
+    background-color: rosybrown;
 }
 
 /* CONTENT DIV END HERE  */
