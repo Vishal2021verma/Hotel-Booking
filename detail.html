@@ -7,20 +7,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/detail.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
     <title>Details</title>
 </head>
 
 <body>
 
-    <!-- header section -->
-    <header>
-        <div class="logo-image-div">
-            <a href="index.html"><img id="logo-image" src="assests/images/logo.png" alt="logo" width="150px"></a>
-        </div>
-        <div class="login-div">
-            <a class="link" href="login.html">Login</a>
+     <!-- header section -->
+     <header>
+        <div class="nav-div">
+            <div class="logo-image-div">
+                <img id="logo-image" src="assests/images/logo.png" alt="logo" width="150px">
+            </div>
+            <div class="login-div">
+                <button type="button" class="btn btn-light" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">LOGIN</button>
+            </div>
         </div>
     </header>
+    <!-- Modal Box for LogIn popup -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Please LogIn</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body centerInput">
+                    <form action="index.html" method="get">
+                        <br>
+                        <label for="uid">Username:</label>
+                        <input type="text" id="uid" name="uid" placeholder="Enter Username" required><br><br>
+                        <label for="pass">Password:</label>
+                        <input type="text" id="pass" name="pass" required placeholder="Enter Password"><br><br>
+                        <br>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">LogIn</button>
+                    </from>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Modal Box for LogIn popup -->
+
+    <!-- Modal Box for contact US popup-->
+    <div class="modal fade" id="exampleModalContactUs" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Get in touch</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body centerInput">
+                    <p>Thank you for reaching out!!!</p>
+                    <p>Please enter your email and we will get back to you.</p>
+                    <form action="index.html">
+                        <input type="email" required placeholder="Enter Your Email"><br>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Submit</button>
+                    </from>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End of Modal Box for contact US popup-->
 
     <div class="content">
         <div class="enter-details-card">
@@ -31,7 +91,7 @@
             </div>
             <div class="enter-details-card-book_now">
                 <form action="payment.html" method="get">
-                    <div class="row">
+                    <div class="rowp">
                         <div class="col-25">
                             <label for="adults">Adults: </label>
                         </div>
@@ -40,7 +100,7 @@
                         </div>
                     </div>
 
-                    <div class="row">
+                    <div class="rowp">
                         <div class="col-25">
                             <label for="name">Name: </label>
                         </div>
@@ -50,7 +110,7 @@
                     </div>
 
 
-                    <div class="row">
+                    <div class="rowp">
                         <div class="col-25">
                             <label for="from_date">From Date:</label>
                         </div>
@@ -60,7 +120,7 @@
                     </div>
 
 
-                    <div class="row">
+                    <div class="rowp">
                         <div class="col-25">
                             <label for="to_date">To Date: </label>
                         </div>
@@ -69,7 +129,7 @@
                         </div>
                     </div>
 
-                    <div class="row">
+                    <div class="rowp">
                         <div class="col-25">
                             <label for="total">Total: </label>
                         </div>
@@ -77,7 +137,7 @@
                             <input type="text" id="total" name="total" disabled>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="rowp">
                         <input type="submit" value="Submit">
                     </div>
                 </form>
@@ -114,9 +174,9 @@
      <footer>
         <div class="nav-div">
             <div class="footer-content-div footer-content">
-                <a class="link" href="contact.html">Contact Us</a>
+                <button type="button" class="btn btn-info" data-bs-toggle="modal"
+                    data-bs-target="#exampleModalContactUs">Contact Us</button>
             </div>
-
             <!-- copyright text  -->
             <p class="copyright footer-content">&#169; 2020 ROOM SEARCH PVT. LTD.</p>
 
