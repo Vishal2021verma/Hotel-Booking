@@ -49,6 +49,8 @@ header{
  
 }
 /* HEADER ENDS HERE  */
+
+/* BOOTSTRAP CSS  */
 .centerInput{
     text-align: center;
 }
@@ -63,6 +65,14 @@ input[type=text], input[type=date],input[type=number],input[type=password],input
     border-radius: 4px;
     resize: vertical;
 }
+.modal-header {
+    background-color: rosybrown;
+}
+button.btn.btn-success {
+    height: 35%;
+}
+/* END OF BOOTSTRAP CSS  */
+
 /* CONTENT DIV STARTS HERE  */
 .content{
     margin-top: 70px;
@@ -77,7 +87,7 @@ input[type=text], input[type=date],input[type=number],input[type=password],input
 }
 .cards{
   width:60%;
-   height: 200px;
+  height: 200px;
   display: flex;
   flex-direction: row;
 }
@@ -86,7 +96,7 @@ input[type=text], input[type=date],input[type=number],input[type=password],input
     height:100%;
 }
 .list-view-cards-details{
-    padding:2%;
+    padding:4%;
     background-color: lightgray;
     width: 70%;
     height: 100%;
@@ -95,6 +105,18 @@ input[type=text], input[type=date],input[type=number],input[type=password],input
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+table{
+    width: 100%;
+    text-align: left;
+    margin-bottom: 4%;
+}
+th{
+
+    padding-right: 5%;
+}
+td{
+    padding-right: 5%;
 }
 
 .payment-details{
@@ -105,7 +127,7 @@ input[type=text], input[type=date],input[type=number],input[type=password],input
     height: 20px;
 }
 .tariff-detail{
-    background-color: rosybrown;
+    background-color: #bc8f8fa6;
     padding: 2%;
     margin:2%;
     border: 1px solid black;
@@ -118,6 +140,7 @@ input[type=text], input[type=date],input[type=number],input[type=password],input
 /* CONTENT DIV ENDS HERE  */
 
 /* FOOTER SECTION STRAT HERE  */
+
 footer{
     background-color: rosybrown;
     position: fixed;
@@ -136,7 +159,7 @@ footer{
     height: 20px;
 }
 
-.social-icon{
+.social-icon{ 
     display: inline;
   
 }
@@ -150,3 +173,64 @@ footer{
 }
 
 /* FOOTER SECTION END HERE  */
+
+
+/* Responsive layout */
+/* Responsive layout - when the screen is less than 576px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 576px) {
+    
+/* CONTENT DIV STARTS HERE  */
+    .cards{
+        width:100%;
+        margin: 0;
+        height:400px;
+        flex-direction: column;
+    }
+    .card-container{
+        padding-top: 0;
+    }
+    .content{
+        margin-top: 60px;
+    }
+    .list-view-cards-img{
+        width:100%;
+        height:60%;
+    }
+    .list-view-cards-details{
+        width: 100%;
+        height: 40%;
+    }
+    .tariff-detail{
+        flex-direction: column;
+        justify-content: center;
+        margin:2% 4%;
+    }
+/* CONTENT DIV ENDS HERE  */
+/* BOOTSTRAP CSS  */
+button.btn.btn-success {
+    height: 100%;
+}
+/* END OF BOOTSTRAP CSS  */
+/* FOOTER SECTION STRAT HERE  */
+    .footer-content{
+        margin: 2%;
+    }
+    .copyright{
+        padding-top:2%;
+        font-size: 8px;
+    }
+/* FOOTER SECTION END HERE  */
+
+}
+
+/* Responsive layout */
+/* Responsive layout - when the screen is greater than 576px wide and less than 768px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .cards{
+        width: 80%;
+    }
+    button.btn.btn-success {
+        height: 35%;
+    }
+
+}
