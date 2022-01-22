@@ -63,6 +63,9 @@ input[type=text], input[type=date],input[type=number],input[type=password],input
     border-radius: 4px;
     resize: vertical;
 }
+.modal-header {
+    background-color: rosybrown;
+}
 
 /* CONTENT DIV STARTS HERE  */
 .content{
@@ -153,3 +156,45 @@ footer{
 }
 
 /* FOOTER SECTION END HERE  */
+
+/* Responsive layout */
+/* Responsive layout - when the screen is less than 576px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 576px) {
+       
+/* CONTENT DIV STARTS HERE  */
+.list-view-cards{
+    height: 400px;
+    width: 100%;
+    flex-direction: column;
+    padding: 3%;
+}
+.list-view-cards-img {
+    width: 100%;
+    height: 70%;
+}
+.list-view-cards-details {
+    padding: 3% 0 0 0;
+    width: 100%;
+    height: 30%;
+}
+
+/* FOOTER SECTION STRAT HERE  */
+.footer-content{
+    margin: 2%;
+}
+.copyright{
+    padding-top:2%;
+    font-size: 8px;
+}
+/* FOOTER SECTION END HERE  */
+}
+
+
+/* Responsive layout */
+/* Responsive layout - when the screen is greater than 576px wide and less than 768px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (min-width: 576px) and (max-width: 768px) { 
+    .list-view-cards{
+        width: 100%;
+    }
+   
+   }
