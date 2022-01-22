@@ -17,6 +17,7 @@ header{
     top:0;
     left: 0;
     width: 100%;
+    z-index: 1;
 }
 .nav-div{
     display: flex;
@@ -50,7 +51,7 @@ header{
 }
 /* HEADER ENDS HERE  */
 
-
+/* BOOTSTRAP CODE  */
 .centerInput{
     text-align: center;
 }
@@ -65,9 +66,12 @@ input[type=text], input[type=date],input[type=number],input[type=password],input
     border-radius: 4px;
     resize: vertical;
 }
+.modal-header {
+    background-color: rosybrown;
+}
+/* END OF BOOTSTRAP CODE */
 
-
-/* CONTENT DIV STARTS HERE  */
+/* CONTENT SECTION STARTS HERE  */
 .content{
     margin-top: 60px;
     margin-bottom: 80px;
@@ -81,7 +85,7 @@ input[type=text], input[type=date],input[type=number],input[type=password],input
     background-attachment: fixed;
     background-size: cover;
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
@@ -107,10 +111,10 @@ input:focus {
     padding: 50px 0 50px 0;
 }
 .city-image{
-    
     border-radius: 25%;
     width: 100%;
     height: 100%;
+    background-size: cover;
 }
 .text {
     color: white;
@@ -141,18 +145,15 @@ input:focus {
     position: relative;
     width:150px;
     height:150px;
-    background-size: cover;
   }
  
 .containerr :hover .overlay {
     opacity: .5;
 }
-
-
 .view-more-div{
     text-align: center;
 }
-/* CONTENT DIV  END HERE*/
+/* CONTENT SECTION  END HERE*/
 
 
 /* FOOTER SECTION STRAT HERE  */
@@ -188,3 +189,48 @@ footer{
 }
 
 /* FOOTER SECTION END HERE  */
+
+
+/* Responsive layout */
+/* Responsive layout - when the screen is less than 576px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 576px) {
+    
+/* CONTENT DIV STARTS HERE  */
+.search-bar{
+    height: 240px;
+    background-attachment:unset;
+}
+.search-bar input{
+    width: 80%;
+}
+.containerr{
+    width: 200px;
+    height: 200px;
+   position: relative;
+    margin: 8% 0;
+  
+}
+.container-image{
+    flex-direction: column;
+    align-items: center;
+}
+
+/* FOOTER SECTION STRAT HERE  */
+.footer-content{
+    margin: 2%;
+}
+.copyright{
+    padding-top:2%;
+    font-size: 8px;
+}
+/* FOOTER SECTION END HERE  */
+}
+
+
+/* Responsive layout */
+/* Responsive layout - when the screen is greater than 576px wide and less than 768px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    
+ /* do nothing  */
+
+}
